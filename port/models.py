@@ -22,6 +22,7 @@ class Work(models.Model):
   thumbnail = models.ImageField(upload_to="images", verbose_name="サムネイル画像", null=True,blank=True)
   skill = models.CharField("スキル",max_length=100)
   url = models.CharField("URL",max_length=100,null=True,blank=True)
+  url2 = models.CharField("URL2",max_length=100,null=True,blank=True)
   created = models.DateField("作成日")
   description = models.TextField("説明")
 

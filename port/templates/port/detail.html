@@ -18,7 +18,7 @@
     <hr>
     <p>
       <i class="fab fa-github mr-2"></i>
-      <span class="font-weight-bolder">GITHUB</span>
+      <span class="font-weight-bolder">GITHUB:</span>
       {% if work_data.url %}
         <a href="{{ work_data.url}}" target="_blank" class="link-color">LINK</a>
       {% else %}
@@ -27,7 +27,15 @@
     </p>
     <hr>
     <p>
-      <i class="far fa-calender-alt mr-2"></i>
+      <span class="font-weight-bolder">アプリのURLはこちら:</span>
+      {% if work_data.url2 %}
+        <a href="{{ work_data.url2}}" target="_blank" class="link-color">URL</a>
+      {% else %}
+        None
+      {% endif %}
+    </p>
+    <hr>
+    <p>
       <span class="font-weight-bolder">CREATED:</span>
       {{ work_data.created }}
     </p>
